@@ -1,0 +1,18 @@
+# 機密資訊
+.env
+key.txt
+
+# 自動生成的資料庫（執行 ingest.py 重新產生）
+data/knowledge.db
+
+# Python 快取
+__pycache__/
+*.pyc
+*.pyo
+
+# Jupyter 暫存
+.ipynb_checkpoints/
+
+# 系統檔
+.DS_Store
+Thumbs.db
