@@ -1,0 +1,11 @@
+﻿id,question,expected_article,topic
+Q1,什麼情況可以申請旅程取消理賠,27,trip_cancel
+Q2,旅程取消有哪些不理賠情況,28,trip_cancel
+Q3,班機延誤需要哪些理賠文件,32,flight_delay
+Q4,什麼情況可以申請旅程更改理賠,33,trip_change
+Q5,旅程更改哪些原因不理賠,34,trip_change
+Q6,旅程更改申請理賠需要什麼證明,35,trip_change
+Q7,行李延誤多久可以理賠,36,baggage_delay
+Q8,行李延誤哪些情況不理賠,37,baggage_delay
+Q9,行李延誤需要什麼文件,38,baggage_delay
+Q10,行李遺失可以申請理賠嗎,39,baggage_loss

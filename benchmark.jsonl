@@ -1,0 +1,20 @@
+{"id": 1, "question": "什麼情況下可以申請旅程取消理賠？", "expected_articles": [27], "answer_type": "covered", "key_points": ["出發前7日至旅行開始前", "取消全部旅程", "四類事故", "無法取回之預繳費用", "部分事故須發生於中華民國境內（如訴訟證人、住居所天災毀損）"]}
+{"id": 2, "question": "旅程取消時，旅行社已退我的部分費用，保險還會全額賠嗎？", "expected_articles": [28], "answer_type": "not_fully_covered", "key_points": ["已退款部分不賠", "非貨幣形式償還也不賠"]}
+{"id": 3, "question": "申請旅程取消需要準備哪些文件？", "expected_articles": [29], "answer_type": "claim_doc", "key_points": ["共通文件四項", "依事故加附證明"]}
+{"id": 4, "question": "班機延誤多久可以理賠？", "expected_articles": [30], "answer_type": "covered", "key_points": ["乘客身分", "定期航班", "4小時以上"]}
+{"id": 5, "question": "班機延誤是每延誤一次都賠嗎？有次數限制嗎？", "expected_articles": [30], "answer_type": "covered_with_limit", "key_points": ["每滿4小時給付一次保險金", "保險期間內以給付2次事故為限"]}
+{"id": 6, "question": "班機取消但航空公司沒有安排替代班機，我自己改買別班，能賠嗎？", "expected_articles": [30], "answer_type": "covered", "key_points": ["原航班取消", "未安排替代班機", "保險期間內", "自行安排替代班機"]}
+{"id": 7, "question": "我太晚到機場沒趕上飛機，算班機延誤嗎？", "expected_articles": [31], "answer_type": "not_covered", "key_points": ["太晚到機場", "不保事項"]}
+{"id": 8, "question": "申請班機延誤要準備什麼？", "expected_articles": [32], "answer_type": "claim_doc", "key_points": ["申請書", "機票/登機證", "延誤證明"]}
+{"id": 9, "question": "旅途中護照遺失，保險有賠嗎？", "expected_articles": [45], "answer_type": "covered", "key_points": ["本次旅程使用之旅行文件", "遺失也在內"]}
+{"id": 10, "question": "護照掉了但我兩天後才去報警，還可以賠嗎？", "expected_articles": [46], "answer_type": "not_covered", "key_points": ["24小時內報案", "警方證明"]}
+{"id": 11, "question": "行李延誤多久可以理賠？", "expected_articles": [36], "answer_type": "covered", "key_points": ["隨行託運", "有領取單", "業者處理失當", "抵達目的地6小時後"]}
+{"id": 12, "question": "我回到台灣後拿不到行李，這樣算行李延誤理賠嗎？", "expected_articles": [37], "answer_type": "not_covered", "key_points": ["返回台灣境內機場不賠"]}
+{"id": 13, "question": "行李延誤申請要附什麼文件？", "expected_articles": [38], "answer_type": "claim_doc", "key_points": ["申請書", "6小時以上證明"]}
+{"id": 14, "question": "行李箱裡的東西被偷了，保險有賠嗎？", "expected_articles": [39], "answer_type": "covered", "key_points": ["容器內個人物品", "竊盜/強盜/搶奪", "或託運損失"]}
+{"id": 15, "question": "行李裡的手機被偷，算行李損失嗎？", "expected_articles": [40], "answer_type": "not_covered", "key_points": ["行動電話屬行李損失不保物品"]}
+{"id": 16, "question": "行李不見了，但我也不知道是不是被偷，這樣有賠嗎？", "expected_articles": [41], "answer_type": "not_covered", "key_points": ["不明原因遺失不賠"]}
+{"id": 17, "question": "行李被偷後我應該先做什麼？", "expected_articles": [42], "answer_type": "procedure", "key_points": ["24小時報警", "或通知業者索取書面證明"]}
+{"id": 18, "question": "信用卡在國外被盜刷，保險賠嗎？", "expected_articles": [57], "answer_type": "covered", "key_points": ["遺失/遭竊/搶奪", "掛失前36小時", "未授權盜刷", "扣除發卡機構應負擔部分"]}
+{"id": 19, "question": "信用卡自己弄丟，還要報警嗎？", "expected_articles": [57, 59], "answer_type": "conditional", "key_points": ["遭竊/搶奪應報警", "自行遺失理賠文件可免附警方證明"]}
+{"id": 20, "question": "手機在國外被偷有賠嗎？如果只是弄丟呢？", "expected_articles": [70, 71], "answer_type": "mixed", "key_points": ["被偷可賠", "單純遺失不賠", "平板電腦、筆電或穿戴裝置即使被偷也不賠（第七十一條第四款）"]}
