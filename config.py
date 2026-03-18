@@ -19,6 +19,7 @@ MAX_CHUNK_LENGTH = 500
 
 # ─── 檢索設定 ──────────────────────────────────────────
 TOP_K = 5
+MIN_SIMILARITY = 0.3  # 低於此分數視為無相關條文
 
 # ─── 資料庫設定 ─────────────────────────────────────────
 DB_PATH = os.path.join(os.path.dirname(__file__), "data", "knowledge.db")
