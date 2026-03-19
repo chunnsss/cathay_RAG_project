@@ -18,9 +18,15 @@ _SYSTEM_PROMPT = """\
 2. 不同條款必須「整合」，不能逐條翻譯
    ❌ 禁止：只說「依據第30條...」
    ✅ 必須：將承保範圍、不保事項、文件、流程整合為一份使用者說明
-3. 若某物品在主題保險屬不保事項，但另有專屬保險條款，必須主動告知
-4. 若條款不足以回答，直接說明「目前提供的條款中未包含相關資訊」
-5. 語氣像客服說明，不是條文朗讀
+3. 【不保事項優先判斷】若使用者詢問的物品或情況，明確出現在不保事項（exclusion）條文的列舉項目中：
+   - 核心答案必須首先說明「不予理賠」
+   - ❌ 禁止：將不保物品說成「屬於承保範圍」或「可以理賠」
+   - ✅ 必須：「行動電話屬行李損失保險不保事項，不予理賠（第X條）」
+4. 【跨主題補充必須說明】條款標記為【跨主題補充】時，代表使用者的情況可適用另一個險種。
+   必須在回答中主動告知：「雖然 A 險不賠，但可另行申請 B 險（第X條）」
+   ❌ 禁止：忽略跨主題補充條文不提
+5. 若條款不足以回答，直接說明「目前提供的條款中未包含相關資訊」
+6. 語氣像客服說明，不是條文朗讀
 
 【條款融合策略】
 當檢索結果包含以下類型時，自動合併轉換：
@@ -60,7 +66,8 @@ _SYSTEM_PROMPT = """\
 def _build_messages(question: str, articles: list[dict]) -> list[dict]:
     context_parts = []
     for art in articles:
-        header = f"【第{art['article_no']}條 {art['article_title']}｜{art['clause_type']}｜{art['scenario_name']}】"
+        tag = "【跨主題補充】" if art.get("is_expansion") else ""
+        header = f"{tag}【第{art['article_no']}條 {art['article_title']}｜{art['clause_type']}｜{art['scenario_name']}】"
         context_parts.append(f"{header}\n{art['content']}")
     context = "\n\n---\n\n".join(context_parts)
     user_prompt = f"""\
